@@ -1,0 +1,34 @@
+Karate Chop in C
+================
+
+This is my attempt at Dave Thomas's karate chop code kata:
+  "Write a binary chop method that takes an integer search target and a sorted
+  array of integers. It should return the integer index of the target in the
+  array, or -1 if the target is not in the array."
+See http://codekata.pragprog.com/2007/01/kata_two_karate.html
+
+I chose to use C, and tried to stick to a pure TDD process, because I've
+never really tried it before.
+
+
+chop.c  -  the implementations
+test.c  -  the tests and a main() function to drive them
+
+At the bottom of chop.c you can use commenting to pick the implementation
+you want.
+
+I scattered notes as comments as I went along to try and capture my thinking.
+
+It uses the "check" unit testing framework for C:
+http://check.sourceforge.net/
+To install under debian/ubuntu:
+  $ sudo apt-get install check
+
+
+During development, I'd run...
+  $ watch make test
+
+...in a separate window. This just builds and runs the tests continuously,
+at 2 second intervals.
+
+
